@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nobel Alemayehu | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- LIVING BACKGROUND -->
+    <div class="bg-overlay"></div>
+    <div class="aurora aurora-1"></div>
+    <div class="aurora aurora-2"></div>
+    <div class="aurora aurora-3"></div>
+    <canvas id="particleCanvas"></canvas>
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- FLOATING PILL NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <a href="#home" class="logo">Nobel<span class="dot">.</span></a>
+        <ul class="nav-links">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- HOME -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="img-container animate-item delay-1">
+                <img src="PHOTO.JPG" alt="Nobel Alemayehu" class="profile-pic">
+            </div>
+            <h1 class="animate-item delay-2">Hi, I'm <span class="highlight">Nobel Alemayehu</span></h1>
+            <p class="subtitle animate-item delay-3">Computer Science Student · Web Developer · Graphic Designer & Animator</p>
+            <div class="cta-buttons animate-item delay-4">
+                <a href="#projects" class="btn btn-primary">View My Work <i class="ph ph-arrow-down"></i></a>
+                <a href="cv.pdf" class="download-btn" download target="_blank">
+                    <div class="button-content">
+                        <div class="svg-container">
+                            <svg class="download-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path d="M19.479 10.092c-.212-3.951-3.473-7.092-7.479-7.092-4.005 0-7.267 3.141-7.479 7.092-2.57.463-4.521 2.706-4.521 5.408 0 3.037 2.463 5.5 5.5 5.5h13c3.037 0 5.5-2.463 5.5-5.5 0-2.702-1.951-4.945-4.521-5.408zm-7.479 6.908l-4-4h3v-4h2v4h3l-4 4z"></path>
+                            </svg>
+                        </div>
+                        <div class="text-container">
+                            <div class="text">Download CV</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+        <div class="section-container">
+            <h2 class="animate-item delay-1">About <span class="highlight">Me</span></h2>
+            <div class="bento-grid">
+                <div class="bento-card about-intro-card animate-item delay-2">
+                    <p>I'm a versatile developer proficient in modern full-stack architectures and intuitive design. Currently a 3rd-year CS student at ACT, I bridge technical precision with creative graphics to craft premium digital experiences.</p>
+                </div>
+                <div class="bento-card about-tech-card animate-slide-left delay-3">
+                    <h3><i class="ph ph-code"></i> Technical Summary</h3>
+                    <ul>
+                        <li><strong>Front-End</strong><span class="sub-detail">HTML5, CSS3, ES6 JS</span></li>
+                        <li><strong>Back-End</strong><span class="sub-detail">Java, SQL Databases</span></li>
+                        <li><strong>Creative</strong><span class="sub-detail">Design, Animation, UI/UX</span></li>
+                    </ul>
+                </div>
+                <div class="bento-card about-edu-card animate-slide-right delay-4">
+                    <h3><i class="ph ph-graduation-cap"></i> Education</h3>
+                    <ul>
+                        <li><strong>BSc Computer Science</strong><span class="sub-detail">ACT Academy (2022 – Present)</span></li>
+                        <li><strong>High School Diploma</strong><span class="sub-detail">Neway Challenge (2019 – 2022)</span></li>
+                    </ul>
+                </div>
+                <div class="bento-card about-hobby-card animate-item delay-5">
+                    <h3><i class="ph ph-game-controller"></i> Interests & Hobbies</h3>
+                    <p>Chess, game physics, single-player campaigns, anime art, and 3D animations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+        <div class="section-container">
+            <h2 class="animate-item delay-1">My <span class="highlight">Skills</span></h2>
+            <div class="skills-grid">
+                <div class="bento-card skill-card animate-slide-left delay-2">
+                    <i class="ph ph-terminal icon-large"></i>
+                    <h3>Programming</h3>
+                    <p>Java, JavaScript, SQL</p>
+                </div>
+                <div class="bento-card skill-card animate-item delay-3">
+                    <i class="ph ph-globe icon-large"></i>
+                    <h3>Web Dev</h3>
+                    <p>HTML5, Responsive CSS, UI/UX</p>
+                </div>
+                <div class="bento-card skill-card animate-item delay-4">
+                    <i class="ph ph-database icon-large"></i>
+                    <h3>Data & Tools</h3>
+                    <p>SQL Server, Git/GitHub, APIs</p>
+                </div>
+                <div class="bento-card skill-card animate-slide-right delay-5">
+                    <i class="ph ph-bezier-curve icon-large"></i>
+                    <h3>Design & Animation</h3>
+                    <p>Figma, Blender 3D, Adobe Suite</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+        <div class="section-container">
+            <h2 class="animate-item delay-1">Recent <span class="highlight">Projects</span></h2>
+            <div class="projects-grid">
+                <div class="bento-card project-card animate-slide-left delay-2">
+                    <div class="project-meta">
+                        <h3>RPG Game</h3>
+                        <p>An immersive role-playing engine featuring exploration, puzzles, and dynamic combat.</p>
+                        <div class="tags"><span>Java</span><span>SQL</span><span>OOP</span></div>
+                    </div>
+                    <a href="https://github.com/noob1o1-collab/RPG-game" target="_blank" class="btn btn-project">
+                        <span><i class="ph ph-github-logo"></i> View Source</span>
+                        <i class="ph ph-arrow-right btn-arrow"></i>
+                    </a>
+                </div>
+                <div class="bento-card project-card animate-slide-right delay-3">
+                    <div class="project-meta">
+                        <h3>Bank System</h3>
+                        <p>A secure banking simulation processing transactions, accounts, and system audits.</p>
+                        <div class="tags"><span>Java</span><span>SQL</span><span>Security</span></div>
+                    </div>
+                    <a href="https://github.com/noob1o1-collab/BankSystem" target="_blank" class="btn btn-project">
+                        <span><i class="ph ph-github-logo"></i> View Source</span>
+                        <i class="ph ph-arrow-right btn-arrow"></i>
+                    </a>
+                </div>
+                <div class="bento-card project-card animate-slide-left delay-4">
+                    <div class="project-meta">
+                        <h3>Hangman Game</h3>
+                        <p>Interactive word-guessing game with visual game states and persistent scoring.</p>
+                        <div class="tags"><span>Java</span><span>Console UI</span><span>Logic</span></div>
+                    </div>
+                    <a href="https://github.com/noob1o1-collab/Hangman-Game" target="_blank" class="btn btn-project">
+                        <span><i class="ph ph-github-logo"></i> View Source</span>
+                        <i class="ph ph-arrow-right btn-arrow"></i>
+                    </a>
+                </div>
+                <div class="bento-card project-card animate-slide-right delay-5">
+                    <div class="project-meta">
+                        <h3>E-Phonebook</h3>
+                        <p>A secure company contact directory with advanced search and indexing logic.</p>
+                        <div class="tags"><span>Java</span><span>SQL</span><span>Data Structs</span></div>
+                    </div>
+                    <a href="https://github.com/noob1o1-collab/e-phonebook" target="_blank" class="btn btn-project">
+                        <span><i class="ph ph-github-logo"></i> View Source</span>
+                        <i class="ph ph-arrow-right btn-arrow"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <div class="section-container">
+            <h2 class="animate-item delay-1">Get In <span class="highlight">Touch</span></h2>
+            <div class="contact-wrapper">
+                <div class="bento-card contact-info animate-slide-left delay-2">
+                    <div>
+                        <h3>Contact Details</h3>
+                        <p style="color:var(--text-muted);margin-top:1rem;margin-bottom:2rem;">Ready to collaborate? Reach out!</p>
+                        <div class="contact-info-item">
+                            <div class="contact-info-icon"><i class="ph ph-envelope-simple"></i></div>
+                            <div class="contact-info-text"><h4>Email</h4><p>nobbbiealex@gmail.com</p></div>
+                        </div>
+                        <div class="contact-info-item">
+                            <div class="contact-info-icon"><i class="ph ph-map-pin"></i></div>
+                            <div class="contact-info-text"><h4>Location</h4><p>Addis Ababa, Ethiopia</p></div>
+                        </div>
+                    </div>
+                    <a href="cv.pdf" class="download-btn download-btn-wide" download target="_blank" style="width:100%;margin-top:1rem;">
+                        <div class="button-content">
+                            <div class="svg-container">
+                                <svg class="download-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path d="M19.479 10.092c-.212-3.951-3.473-7.092-7.479-7.092-4.005 0-7.267 3.141-7.479 7.092-2.57.463-4.521 2.706-4.521 5.408 0 3.037 2.463 5.5 5.5 5.5h13c3.037 0 5.5-2.463 5.5-5.5 0-2.702-1.951-4.945-4.521-5.408zm-7.479 6.908l-4-4h3v-4h2v4h3l-4 4z"></path>
+                                </svg>
+                            </div>
+                            <div class="text-container">
+                                <div class="text">Download Full CV</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="bento-card contact-form-card animate-slide-right delay-3">
+                    <form action="#" onsubmit="event.preventDefault(); alert('Message sent successfully!');">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" placeholder="Full name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="Email address" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" rows="4" placeholder="Your message..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width:100%;">
+                            Send Message <i class="ph ph-paper-plane-right"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Nobel Alemayehu</p>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/nobel-alemayehu-0425a3356" target="_blank" class="btn-social">
+                <i class="ph ph-linkedin-logo"></i>
+            </a>
+            <a href="https://github.com/noob1o1-collab" target="_blank" class="btn-social">
+                <i class="ph ph-github-logo"></i>
+            </a>
+            <a href="mailto:nobbbiealex@gmail.com" class="btn-social">
+                <i class="ph ph-envelope-simple"></i>
+            </a>
+        </div>
+    </footer>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+        // =============================================
+        // 1. PARTICLE SYSTEM (Canvas)
+        // =============================================
+        const canvas = document.getElementById('particleCanvas');
+        const ctx = canvas.getContext('2d');
+        let w, h;
+        let mouseX = -500, mouseY = -500;
+        const particles = [];
+        const PARTICLE_COUNT = 60;
+        const CONNECT_DIST = 140;
+        const MOUSE_RADIUS = 200;
+
+        function resize() {
+            w = canvas.width = window.innerWidth;
+            h = canvas.height = window.innerHeight;
+        }
+        resize();
+        window.addEventListener('resize', resize);
+
+        class Particle {
+            constructor() { this.reset(); }
+            reset() {
+                this.x = Math.random() * w;
+                this.y = Math.random() * h;
+                this.vx = (Math.random() - 0.5) * 0.4;
+                this.vy = (Math.random() - 0.5) * 0.4;
+                this.r = Math.random() * 2 + 0.5;
+                this.baseAlpha = Math.random() * 0.3 + 0.1;
+            }
+            update() {
+                // Mouse repulsion
+                const dx = this.x - mouseX;
+                const dy = this.y - mouseY;
+                const dist = Math.sqrt(dx * dx + dy * dy);
+                if (dist < MOUSE_RADIUS) {
+                    const force = (MOUSE_RADIUS - dist) / MOUSE_RADIUS;
+                    this.vx += (dx / dist) * force * 0.6;
+                    this.vy += (dy / dist) * force * 0.6;
+                }
+                // Dampen
+                this.vx *= 0.98;
+                this.vy *= 0.98;
+                this.x += this.vx;
+                this.y += this.vy;
+                // Wrap
+                if (this.x < 0) this.x = w;
+                if (this.x > w) this.x = 0;
+                if (this.y < 0) this.y = h;
+                if (this.y > h) this.y = 0;
+            }
+            draw() {
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.r, 0, Math.PI * 2);
+                ctx.fillStyle = `rgba(255, 51, 51, ${this.baseAlpha})`;
+                ctx.fill();
+            }
+        }
+
+        for (let i = 0; i < PARTICLE_COUNT; i++) particles.push(new Particle());
+
+        function drawConnections() {
+            for (let i = 0; i < particles.length; i++) {
+                for (let j = i + 1; j < particles.length; j++) {
+                    const dx = particles[i].x - particles[j].x;
+                    const dy = particles[i].y - particles[j].y;
+                    const dist = Math.sqrt(dx * dx + dy * dy);
+                    if (dist < CONNECT_DIST) {
+                        const alpha = (1 - dist / CONNECT_DIST) * 0.08;
+                        ctx.beginPath();
+                        ctx.moveTo(particles[i].x, particles[i].y);
+                        ctx.lineTo(particles[j].x, particles[j].y);
+                        ctx.strokeStyle = `rgba(255, 51, 51, ${alpha})`;
+                        ctx.lineWidth = 0.5;
+                        ctx.stroke();
+                    }
+                }
+            }
+        }
+
+        function animateParticles() {
+            ctx.clearRect(0, 0, w, h);
+            particles.forEach(p => { p.update(); p.draw(); });
+            drawConnections();
+            requestAnimationFrame(animateParticles);
+        }
+        animateParticles();
+
+        // =============================================
+        // 2. CURSOR GLOW (follows mouse with lerp)
+        // =============================================
+        const cursorGlow = document.getElementById('cursorGlow');
+        let glowX = 0, glowY = 0;
+
+        document.addEventListener('mousemove', (e) => {
+            mouseX = e.clientX;
+            mouseY = e.clientY;
+        });
+
+        function updateGlow() {
+            glowX += (mouseX - glowX) * 0.06;
+            glowY += (mouseY - glowY) * 0.06;
+            cursorGlow.style.left = glowX + 'px';
+            cursorGlow.style.top = glowY + 'px';
+            requestAnimationFrame(updateGlow);
+        }
+        updateGlow();
+
+        // =============================================
+        // 3. CARD SPOTLIGHT + TILT
+        // =============================================
+        document.querySelectorAll('.bento-card').forEach(card => {
+            card.addEventListener('mousemove', (e) => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                const cx = rect.width / 2;
+                const cy = rect.height / 2;
+                card.style.setProperty('--spot-x', x + 'px');
+                card.style.setProperty('--spot-y', y + 'px');
+                const rx = ((y - cy) / cy) * -5;
+                const ry = ((x - cx) / cx) * 5;
+                card.style.transform = `perspective(700px) rotateX(${rx}deg) rotateY(${ry}deg) scale(1.02)`;
+            });
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'perspective(700px) rotateX(0) rotateY(0) scale(1)';
+            });
+        });
+
+        // =============================================
+        // 4. MAGNETIC BUTTONS + RIPPLE CLICK
+        // =============================================
+        document.querySelectorAll('.btn, .btn-social, .download-btn').forEach(btn => {
+            // Magnetic pull
+            btn.addEventListener('mousemove', (e) => {
+                const rect = btn.getBoundingClientRect();
+                const bx = e.clientX - rect.left - rect.width / 2;
+                const by = e.clientY - rect.top - rect.height / 2;
+                btn.style.transform = `translate(${bx * 0.35}px, ${by * 0.35}px) scale(1.05)`;
+            });
+            btn.addEventListener('mouseleave', () => {
+                btn.style.transform = 'translate(0, 0) scale(1)';
+            });
+
+            // Squish
+            btn.addEventListener('mousedown', () => {
+                btn.style.transform = 'translate(0, 0) scale(0.92)';
+            });
+            btn.addEventListener('mouseup', () => {
+                btn.style.transform = 'translate(0, 0) scale(1)';
+            });
+
+            // Ripple on click
+            btn.addEventListener('click', function(e) {
+                const rect = this.getBoundingClientRect();
+                const ripple = document.createElement('span');
+                ripple.classList.add('ripple');
+                const size = Math.max(rect.width, rect.height);
+                ripple.style.width = ripple.style.height = size + 'px';
+                ripple.style.left = (e.clientX - rect.left - size / 2) + 'px';
+                ripple.style.top = (e.clientY - rect.top - size / 2) + 'px';
+                this.appendChild(ripple);
+                ripple.addEventListener('animationend', () => ripple.remove());
+            });
+        });
+
+        // =============================================
+        // 5. INTERSECTION OBSERVER (Entrance + Nav)
+        // =============================================
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('.nav-links a');
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const id = entry.target.id;
+                    navLinks.forEach(link => {
+                        link.classList.toggle('active', link.getAttribute('href') === '#' + id);
+                    });
+                    entry.target.classList.add('appear');
+                }
+            });
+        }, { rootMargin: '-25% 0px -25% 0px', threshold: 0 });
+
+        sections.forEach(s => observer.observe(s));
+
+        // =============================================
+        // 6. NAVBAR: Scroll-based solid background
+        // =============================================
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            navbar.classList.toggle('scrolled', window.scrollY > 80);
+        }, { passive: true });
+
+        // =============================================
+        // 7. NAV LINK MAGNETIC
+        // =============================================
+        navLinks.forEach(link => {
+            link.addEventListener('mousemove', (e) => {
+                const rect = link.getBoundingClientRect();
+                const dx = e.clientX - rect.left - rect.width / 2;
+                const dy = e.clientY - rect.top - rect.height / 2;
+                link.style.transform = `translate(${dx * 0.25}px, ${dy * 0.4}px)`;
+            });
+            link.addEventListener('mouseleave', () => {
+                link.style.transform = 'translate(0,0)';
+            });
+        });
+
+        // =============================================
+        // 8. PARALLAX SECTION HEADERS
+        // =============================================
+        const headers = document.querySelectorAll('h2');
+        window.addEventListener('scroll', () => {
+            headers.forEach(h => {
+                const rect = h.getBoundingClientRect();
+                const offset = (rect.top - window.innerHeight / 2) * 0.03;
+                h.style.transform = `translateY(${offset}px)`;
+            });
+        }, { passive: true });
+
+    });
+    </script>
+</body>
+</html>
